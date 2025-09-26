@@ -1,4 +1,4 @@
-# AstroNvim Template
+# FranzVim
 
 **NOTE:** This is for AstroNvim v5+
 
