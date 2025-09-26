@@ -2,7 +2,7 @@
 
 **NOTE:** This is for AstroNvim v5+
 
-A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+A config based on [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
 ## 🛠️ Installation
 
@@ -24,7 +24,7 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 #### Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
+git clone https://github.com/Kats-ui/FranzVim.git ~/.config/nvim
 ```
 
 #### Start Neovim
