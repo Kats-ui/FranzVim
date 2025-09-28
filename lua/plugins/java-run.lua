@@ -4,7 +4,6 @@ return {
   opts = {
     mappings = {
       n = {
-        -- 🟡 FranzVim: Compile & Run Java with package detection
         ["<leader>lj"] = {
           function()
             local buf_path = vim.api.nvim_buf_get_name(0)
@@ -36,7 +35,7 @@ return {
 
             vim.cmd("split | term bash -c '" .. cmd .. "'")
           end,
-          desc = "🟡 FranzVim: Compile & Run Java (with package detection)",
+          desc = "Compile & Run Java",
         },
       },
     },

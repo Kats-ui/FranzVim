@@ -38,40 +38,40 @@
 --   },
 -- }
 
--- return {
---   {
---     "folke/tokyonight.nvim",
---     name = "tokyonight",
---     priority = 1000,
---     opts = {
---       style = "night", -- options: "storm", "night", "moon", "day"
---       transparent = false,
---       styles = {
---         comments = { italic = true },
---         keywords = { italic = true },
---         functions = { bold = true },
---         variables = {},
---       },
---       sidebars = { "qf", "help", "terminal", "packer" },
---       dim_inactive = true,
---     },
---     config = function(_, opts)
---       require("tokyonight").setup(opts)
---       vim.cmd "colorscheme tokyonight"
---     end,
---   },
--- }
-
 return {
   {
-    "ellisonleao/gruvbox.nvim",
-    priority = 1000, -- ensures it loads before other UI plugins
-    config = function()
-      require("gruvbox").setup {
-        contrast = "hard", -- options: soft, medium, hard
-        transparent_mode = false,
-      }
-      vim.cmd "colorscheme gruvbox"
+    "folke/tokyonight.nvim",
+    name = "tokyonight",
+    priority = 1000,
+    opts = {
+      style = "night", -- options: "storm", "night", "moon", "day"
+      transparent = false,
+      styles = {
+        comments = { italic = true },
+        keywords = { italic = true },
+        functions = { bold = true },
+        variables = {},
+      },
+      sidebars = { "qf", "help", "terminal", "packer" },
+      dim_inactive = true,
+    },
+    config = function(_, opts)
+      require("tokyonight").setup(opts)
+      vim.cmd "colorscheme tokyonight"
     end,
   },
 }
+
+-- return {
+--   {
+--     "ellisonleao/gruvbox.nvim",
+--     priority = 1000, -- ensures it loads before other UI plugins
+--     config = function()
+--       require("gruvbox").setup {
+--         contrast = "hard", -- options: soft, medium, hard
+--         transparent_mode = false,
+--       }
+--       vim.cmd "colorscheme gruvbox"
+--     end,
+--   },
+-- }
